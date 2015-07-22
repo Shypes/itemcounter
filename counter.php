@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * @author      Adesipe Oluwatosin
+ * @email       adesipetosin@shypes.com
+ * @package     counter
+ * @copyright   Copyright (C) 2012 - 2015 Open Source Matters. All rights reserved.
+ */
 define( 'redis_scheme',     'tcp');
 define( 'redis_host',       'localhost');
 define( 'redis_port',       '6379');
@@ -133,7 +138,7 @@ class counter
         }return $instances['redis'];
     }
     // requires memchache to be compiled with php
-    
+
     function &memcache($soft = false)
     {
         static $instances;
